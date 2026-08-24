@@ -19,7 +19,8 @@ body,
 	height: 100%;
 	padding: 0;
 	margin: 0;
-	background: #fafaf9;
+	background: #000;
+	color: #FFF;
 	font-family: sans-serif;
 }
 
@@ -28,7 +29,28 @@ body {
 	overscroll-behavior: none;
 }
 
-textarea { font-family: 'JetBrains Mono', monospace; }
+textarea { 
+	font-size: 16px;
+	line-height: 1.5;
+	font-family: 'JetBrains Mono', monospace;
+	background-color: #080808;
+	color: #EFD;
+	outline: 1px solid transparent;
+	border: 1px solid #111;
+}
+
+textarea:focus {
+	transition: all 750ms ease-in-out;
+	outline: 1px solid #222;
+	/* border: 1px solid #222;	 */
+}
+
+textarea:active {
+	outline: 1px solid #222;
+	/* border: 1px solid #222; */
+	color: #FFF;
+	transition: all 750ms ease-in-out;
+}
 
 		</style>
 	</head>
